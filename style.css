@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root { /* vetia e cila krijon variable */
+    --bardhe: white;
+    --zi:black;
+    --primare: #ff891b;
+    --sekondare: #484848;
+    --gri: #ddd;
+    --grierret: #777777;
+}
+
+
+.zone{
+    background-color: var(--sekondare) ;
+    font-size: 2em;
+
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+li{
+    padding: 20px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.push{
+    margin-left: auto;
+}
+
+@media (max-width: 800px) {
+    .main-nav{
+        font-size: 0.3em;
+        padding: 0;
+    }
+    li{
+        padding: 15px;
+    }
+}
+
+a:hover{
+    background: var(--grierret);
+    transition: 0.5s;
+}
+
+.container{
+    padding: 0 200px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.6)),
+    url(img/hero.jfif);
+    background-size: 100% 100%;
+}
+
+.title{
+    font-size: 120px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 35px;
+    padding: 0px 90px 0px 90px;
+    text-align: center;
+}
+
+.button-hero{
+    display: flex;
+    margin: auto;
+    padding:13px 50px;
+    background-color: var(--gri);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.button-hero:hover{
+    background-color: var(--primare);
+    transition: 0.5s;
+}
+
+@media (max-width: 800px) {
+.title{
+    font-size: 80px;
+}
+.hero{
+    height: 70vh;
+}
+
+}
