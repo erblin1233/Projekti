@@ -162,3 +162,13 @@ h3{
     font-size: 45px;
     color: white;
 }
+
+@media (max-width: 800px) {
+    .BENTLEY{
+        width: 200px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+}
